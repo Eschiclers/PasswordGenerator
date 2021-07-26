@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <vue-headful
-                title="Generador de contraseñas | Cadiducho.com"
+                title="Password generator"
                 description="Generador de contraseñas"
         />
         <h1>Generador de contraseñas</h1>
@@ -71,7 +71,7 @@
 
 
         <footer>
-            Este generador de contraseñas es gratuito y de <a href="https://github.com/Cadiducho/PasswordGenerator">código abierto</a>. Desarrollado por <a href="https://twitter/Cadiducho">@Cadiducho</a> y <a href="https://github.com/Cadiducho/PasswordGenerator/graphs/contributors">colaboradores</a> | <a href="https://cadiducho.com">Cadiducho.com</a>
+            Este generador de contraseñas es gratuito y de <a href="https://github.com/Eschiclers/PasswordGenerator">código abierto</a>. Desarrollo alternativo por <a href="https://github.com/Eschiclers">@Eschiclers</a> y <a href="https://github.com/Eschiclers/PasswordGenerator/graphs/contributors">colaboradores</a> | Desarrollo original por <a href="http://github.com/Cadiducho">@Cadiducho</a> - <a href="https://cadiducho.com">Cadiducho.com</a>
         </footer>
     </div>
 </template>
