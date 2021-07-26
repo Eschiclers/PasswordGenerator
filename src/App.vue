@@ -2,50 +2,57 @@
     <div id="app">
         <a class="github-fork-ribbon" href="https://github.com/Eschiclers/PasswordGenerator" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
         <vue-headful
-                title="Password generator"
-                description="Generador de contraseñas"
+                :title="$t('title')"
+                :description="$t('title')"
         />
-        <h1>Generador de contraseñas</h1>
+        <h1>{{ $t("title") }}</h1>
 
-        <h3>
-            <span v-if="!darkMode" @click="ChangeTheme()" class="pointer noselect">Cambiar a modo oscuro 🌑</span>
-            <span v-else @click="ChangeTheme()" class="pointer noselect">Cambiar a modo claro ☀️ </span>
-        </h3>
+        <div class="row">
+            <div>
+                <h3>
+                    <span v-if="!darkMode" @click="ChangeTheme()" class="pointer noselect">{{ $t("switch_to_darkmode") }}</span>
+                    <span v-else @click="ChangeTheme()" class="pointer noselect"> {{ $t("switch_to_lightmode") }} </span>
+                </h3>
+            </div>
+            <div>
+                <LocaleChanger />
+            </div>
+        </div>
 
         <fieldset>
-            <legend>Características</legend>
+            <legend>{{ $t("settings") }}</legend>
             <p>
                 <input type="checkbox" id="numbers" v-model="options.numbers" @change="generate()">
-                <label for="numbers" :class="{ 'red': !options.numbers }">Números incluídos</label>
+                <label for="numbers" :class="{ 'red': !options.numbers }">{{ $t("options.numbers_included") }}</label>
             </p>
             <p>
                 <input type="checkbox" id="mayus" v-model="options.mayus" @change="generate()">
-                <label for="mayus" :class="{ 'red': !options.mayus }">Mayúsculas incluídas</label>
+                <label for="mayus" :class="{ 'red': !options.mayus }">{{ $t("options.capital_letters_included") }}</label>
             </p>
             <p>
                 <input type="checkbox" id="minus" v-model="options.minus" @change="generate()">
-                <label for="minus" :class="{ 'red': !options.minus }">Minúsculas incluídas</label>
+                <label for="minus" :class="{ 'red': !options.minus }">{{ $t("options.lower_case_letters_included") }}</label>
             </p>
             <p>
                 <input type="checkbox" id="symbols" v-model="options.symbols" @change="generate()">
-                <label for="symbols" :class="{ 'red': !options.symbols }">Símbolos y caracteres especiales incluídos</label>
+                <label for="symbols" :class="{ 'red': !options.symbols }">{{ $t("options.special_characters_included") }}</label>
             </p>
             <p>
                 <input type="checkbox" id="save_options" v-model="options.save_options" @change="SaveOptions()">
-                <label for="save_options">Guardar opciones</label>
+                <label for="save_options">{{ $t("options.save_options") }}</label>
             </p>
             <hr>
             <p>
-                <label for="size">Número de caracteres</label>
+                <label for="size">{{ $t("options.length") }}</label>
                 <input type="number" min="1" id="size" v-model="options.size" @change="generate()">
             </p>
             <p>
-                <label for="size">Caracteres a evitar</label>
-                <input type="text" id="avoid" v-model="options.avoid" placeholder="Ejemplo: i l I |" @change="generate()">
+                <label for="size">{{ $t("options.characters_to_avoid") }}</label>
+                <input type="text" id="avoid" v-model="options.avoid" :placeholder="$t('options.characters_to_avoid_example')" @change="generate()">
             </p>
             <p>
                 <input type="checkbox" id="hidden" v-model="options.hidden" @change="generate()">
-                <label for="hidden">Ocultar la contraseña generada</label>
+                <label for="hidden">{{ $t("options.hide_generated_password") }}</label>
             </p>
         </fieldset>
         <section>
@@ -55,15 +62,15 @@
                 </div>
                 <div class='column-4'>
                     <button v-clipboard:copy="password" v-clipboard:success="onCopy" :disabled="copy.copied">
-                        {{copy.texto}}
+                        {{ $t("copy") }}
                     </button>
                 </div>
             </div>
-            <button type="button" @click="generate()">Generar otra</button>
+            <button type="button" @click="generate()">{{ $t("generate_password") }}</button>
         </section>
 
         <section>
-            <h2>Acerca de</h2>
+            <h2>{{ $t("about") }}</h2>
             Ninguna contraseña es guardada. Toda la generación ocurre en tu navegador.
             <br>
             Creado con <a href="https://vuejs.org/">Vue.js</a> y una version modificada de <a href="https://github.com/kognise/water.css">Water.css</a>
@@ -77,7 +84,10 @@
 </template>
 
 <script>
+    import LocaleChanger from './components/LocaleChanger';
+
     export default {
+        components: { LocaleChanger },
         name: 'PasswordGenerator',
         data: function () {
             return {
@@ -94,7 +104,6 @@
                 },
 
                 copy: {
-                    texto: '🔖 ¡Copiar!',
                     copied: false,
                 },
 
@@ -225,5 +234,9 @@
         -moz-user-select: none; /* Old versions of Firefox */
         -ms-user-select: none; /* Internet Explorer/Edge */
         user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+    }
+    .row {
+        align-items: center;
+        justify-content: space-between;
     }
 </style>
