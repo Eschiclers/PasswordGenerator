@@ -1,5 +1,6 @@
 <template>
     <div id="app">
+        <a class="github-fork-ribbon" href="https://github.com/Eschiclers/PasswordGenerator" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
         <vue-headful
                 title="Password generator"
                 description="Generador de contraseñas"
@@ -174,9 +175,10 @@
 </script>
 
 <style>
-    @import './assets/css/flex.css';
-    @import './assets/css/light.css';
+    @import "./assets/css/flex.css";
+    @import "./assets/css/light.css";
     @import "./assets/css/theme-colors.css";
+    @import "./assets/css/gh-fork-ribbon.min.css";
 
     input {
         margin-right: 5px!important;
