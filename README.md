@@ -1,7 +1,8 @@
 ## PasswordGenerator
 
-Generador de contraseñas alojado en [Cadiducho.com/pass](http://cadiducho.com/pass)
-De 2014 a 2020 escrito en PHP, reescrito a Vue.js
+Generador de contraseñas alojado en [eschiclers.github.io/PasswordGenerator/](https://eschiclers.github.io/PasswordGenerator/) haciendo uso de Github Pages.
+
+El código original es de un [repositorio](https://github.com/Cadiducho/PasswordGenerator) de [@Cadiducho](https://github.com/Cadiducho/), cuyo código estuvo escrito en PHP desde 2014 hasta 2020, y reescrito a Vue.js
 
 ### Caracteristicas
 * Opción de incluir números
