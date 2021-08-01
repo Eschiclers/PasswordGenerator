@@ -86,15 +86,13 @@
 
         <section>
             <h2>{{ $t("about") }}</h2>
-            Ninguna contraseña es guardada. Toda la generación ocurre en tu navegador.
-            <br>
-            Creado con <a href="https://vuejs.org/">Vue.js</a> y una version modificada de <a href="https://github.com/kognise/water.css">Water.css</a>
+            <div v-html='$t("about_content")'>
+
+            </div>
         </section>
 
 
-        <footer>
-            Este generador de contraseñas es gratuito y de <a href="https://github.com/Eschiclers/PasswordGenerator">código abierto</a>. Desarrollo alternativo por <a href="https://github.com/Eschiclers">@Eschiclers</a> y <a href="https://github.com/Eschiclers/PasswordGenerator/graphs/contributors">colaboradores</a> | Desarrollo original por <a href="http://github.com/Cadiducho">@Cadiducho</a> - <a href="https://cadiducho.com">Cadiducho.com</a>
-        </footer>
+        <footer v-html='$t("footer")'></footer>
     </div>
 </template>
 

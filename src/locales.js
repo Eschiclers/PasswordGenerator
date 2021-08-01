@@ -18,6 +18,8 @@ module.exports = {
     copy: '🔖 Copy!',
     generate_password: 'Generate password',
     about: 'About',
+    about_content: 'Ninguna contraseña es guardada. Toda la generación ocurre en tu navegador.<br>Creado con <a href="https://vuejs.org/">Vue.js</a> y una version modificada de <a href="https://github.com/kognise/water.css">Water.css</a>',
+    footer: 'Este generador de contraseñas es gratuito y de <a href="https://github.com/Eschiclers/PasswordGenerator">código abierto</a>. Desarrollo alternativo por <a href="https://github.com/Eschiclers">@Eschiclers</a> y <a href="https://github.com/Eschiclers/PasswordGenerator/graphs/contributors">colaboradores</a> | Desarrollo original por <a href="http://github.com/Cadiducho">@Cadiducho</a> - <a href="https://cadiducho.com">Cadiducho.com</a>',
   },
   es: {
     title: 'Generador de contraseñas',
@@ -38,6 +40,8 @@ module.exports = {
     copy: '🔖 ¡Copiar!',
     generate_password: 'Generar contraseña',
     about: 'Acerca de',
+    about_content: 'Ninguna contraseña es guardada. Toda la generación ocurre en tu navegador.<br>Creado con <a href="https://vuejs.org/">Vue.js</a> y una version modificada de <a href="https://github.com/kognise/water.css">Water.css</a>',
+    footer: 'Este generador de contraseñas es gratuito y de <a href="https://github.com/Eschiclers/PasswordGenerator">código abierto</a>. Desarrollo alternativo por <a href="https://github.com/Eschiclers">@Eschiclers</a> y <a href="https://github.com/Eschiclers/PasswordGenerator/graphs/contributors">colaboradores</a> | Desarrollo original por <a href="http://github.com/Cadiducho">@Cadiducho</a> - <a href="https://cadiducho.com">Cadiducho.com</a>',
   },
   fr: {
     title: 'Générateur de mots de passe',
@@ -58,6 +62,8 @@ module.exports = {
     copy: '🔖 Copier!',
     generate_password: 'Générer un mot de passe',
     about: 'À propos',
+    about_content: 'Ninguna contraseña es guardada. Toda la generación ocurre en tu navegador.<br>Creado con <a href="https://vuejs.org/">Vue.js</a> y una version modificada de <a href="https://github.com/kognise/water.css">Water.css</a>',
+    footer: 'Este generador de contraseñas es gratuito y de <a href="https://github.com/Eschiclers/PasswordGenerator">código abierto</a>. Desarrollo alternativo por <a href="https://github.com/Eschiclers">@Eschiclers</a> y <a href="https://github.com/Eschiclers/PasswordGenerator/graphs/contributors">colaboradores</a> | Desarrollo original por <a href="http://github.com/Cadiducho">@Cadiducho</a> - <a href="https://cadiducho.com">Cadiducho.com</a>',
   },
   ru: {
     title: 'Генератор паролей',
@@ -78,6 +84,8 @@ module.exports = {
     copy: '🔖 Копировать!',
     generate_password: 'Сгенерировать пароль',
     about: 'О программе',
+    about_content: 'Ninguna contraseña es guardada. Toda la generación ocurre en tu navegador.<br>Creado con <a href="https://vuejs.org/">Vue.js</a> y una version modificada de <a href="https://github.com/kognise/water.css">Water.css</a>',
+    footer: 'Este generador de contraseñas es gratuito y de <a href="https://github.com/Eschiclers/PasswordGenerator">código abierto</a>. Desarrollo alternativo por <a href="https://github.com/Eschiclers">@Eschiclers</a> y <a href="https://github.com/Eschiclers/PasswordGenerator/graphs/contributors">colaboradores</a> | Desarrollo original por <a href="http://github.com/Cadiducho">@Cadiducho</a> - <a href="https://cadiducho.com">Cadiducho.com</a>',
   },
   de: {
     title: 'Passwort-Generator',
@@ -98,6 +106,8 @@ module.exports = {
     copy: '🔖 Kopieren!',
     generate_password: 'Passwort generieren',
     about: 'Über diese App',
+    about_content: 'Ninguna contraseña es guardada. Toda la generación ocurre en tu navegador.<br>Creado con <a href="https://vuejs.org/">Vue.js</a> y una version modificada de <a href="https://github.com/kognise/water.css">Water.css</a>',
+    footer: 'Este generador de contraseñas es gratuito y de <a href="https://github.com/Eschiclers/PasswordGenerator">código abierto</a>. Desarrollo alternativo por <a href="https://github.com/Eschiclers">@Eschiclers</a> y <a href="https://github.com/Eschiclers/PasswordGenerator/graphs/contributors">colaboradores</a> | Desarrollo original por <a href="http://github.com/Cadiducho">@Cadiducho</a> - <a href="https://cadiducho.com">Cadiducho.com</a>',
   },
   it: {
     title: 'Generatore di password',
@@ -118,6 +128,8 @@ module.exports = {
     copy: '🔖 Copia!',
     generate_password: 'Genera password',
     about: 'Informazioni su questa app',
+    about_content: 'Ninguna contraseña es guardada. Toda la generación ocurre en tu navegador.<br>Creado con <a href="https://vuejs.org/">Vue.js</a> y una version modificada de <a href="https://github.com/kognise/water.css">Water.css</a>',
+    footer: 'Este generador de contraseñas es gratuito y de <a href="https://github.com/Eschiclers/PasswordGenerator">código abierto</a>. Desarrollo alternativo por <a href="https://github.com/Eschiclers">@Eschiclers</a> y <a href="https://github.com/Eschiclers/PasswordGenerator/graphs/contributors">colaboradores</a> | Desarrollo original por <a href="http://github.com/Cadiducho">@Cadiducho</a> - <a href="https://cadiducho.com">Cadiducho.com</a>',
   },
   pt: {
     title: 'Gerador de senhas',
@@ -138,5 +150,7 @@ module.exports = {
     copy: '🔖 Copiar!',
     generate_password: 'Gerar senha',
     about: 'Sobre este aplicativo',
+    about_content: 'Ninguna contraseña es guardada. Toda la generación ocurre en tu navegador.<br>Creado con <a href="https://vuejs.org/">Vue.js</a> y una version modificada de <a href="https://github.com/kognise/water.css">Water.css</a>',
+    footer: 'Este generador de contraseñas es gratuito y de <a href="https://github.com/Eschiclers/PasswordGenerator">código abierto</a>. Desarrollo alternativo por <a href="https://github.com/Eschiclers">@Eschiclers</a> y <a href="https://github.com/Eschiclers/PasswordGenerator/graphs/contributors">colaboradores</a> | Desarrollo original por <a href="http://github.com/Cadiducho">@Cadiducho</a> - <a href="https://cadiducho.com">Cadiducho.com</a>',
   }
 };
