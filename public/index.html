@@ -6,12 +6,25 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.png">
     <title>Password generator</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async
+      src="https://www.googletagmanager.com/gtag/js?id=G-BNP7MHCP7W"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-BNP7MHCP7W');
+    </script>
   </head>
   <body>
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
-</html>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't
+          work properly without JavaScript enabled. Please enable it to
+          continue.</strong>
+      </noscript>
+      <div id="app"></div>
+      <!-- built files will be auto injected -->
+    </body>
+  </html>
