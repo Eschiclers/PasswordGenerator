@@ -58,7 +58,10 @@
             </p>
             <hr>
             <p>
-                <label for="size">{{ $t("options.length") }}</label>
+                <label for="size">{{ $t("options.length") }}
+                    (<span v-if="options.size < 8" style="color: gold;">{{ $t("options.length_weak") }}</span>
+                    <span v-else style="color: green;">{{ $t("options.length_strong") }}</span>)
+                </label>
                 <input type="number" min="1" id="size" v-model="options.size" @change="generate()">
             </p>
             <p>

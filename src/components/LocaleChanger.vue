@@ -12,7 +12,7 @@
 export default {
   name: 'LocaleChanger',
   data () {
-    return { langs: ['es', 'en', 'fr', 'de', 'pt', 'ru', 'it'] }
+    return { langs: ['es', 'en', 'ca', 'fr', 'de', 'pt', 'ru', 'it'] }
   },
   methods: {
     ChangeLocale (e) {
